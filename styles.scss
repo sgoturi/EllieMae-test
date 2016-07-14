@@ -1,0 +1,198 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "_mixins.scss";
+
+body {
+    font-family:"open-sans";
+    color: #333;
+	width:100%;
+	height:auto;
+}
+header{
+	padding:1%;
+	margin-top: 2%;
+img{
+   padding-left:5%;
+}
+h1 {
+	font-family: "Open Sans";
+	font-size: 2.25em;
+	display:inline;
+	padding-left:40px;
+}
+ul {
+	
+	display:inline;
+	float:right;
+	padding-right: 5%;
+    padding-top: 1%;
+	width:45%;
+	
+li{
+  list-style:none;
+  display:inline;
+  
+  padding-left:2%;
+  color:gainsboro;
+  }
+}
+ li:hover{
+    color: blue;
+    font-weight:bold;
+ }
+ ul.topnav li.icon {
+    display: none;
+ }
+ @media screen and (max-width:680px) {
+     ul.topnav li {display: none;}
+     ul.topnav li.icon {
+     float: right;
+     display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  } 
+ }
+}
+.container{
+   @include container;
+   padding:5%;
+   height:200px;
+   
+.featured{
+   width:40%;
+   float:left;
+   height:80%;
+   padding:3%;
+   font-size:16px;
+   color:white;
+@media screen and (max-width:680px) {
+     width:80%;
+     font-size:12px;
+}
+h1{
+    font-size:20px;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     font-size:16px;
+ }
+}
+p{
+   text-align:center;
+   padding:4%;
+}
+
+}
+.button{
+	width: 30%;
+    height: 40px;
+    background-color: white;
+    margin-top: 3%;
+    text-align: center;
+    display: inline;
+    color:#00BFFF;
+
+}
+h2{
+    margin:auto;
+    text-align:center;
+    font-size:24px;
+}
+
+}
+#iconContainer{
+    width:100%;
+    padding-top:1%;
+@media screen and (max-width:680px) {
+     width:80%;
+     font-size:12px;
+}
+
+
+h2{
+	margin:auto;
+    text-align:center;
+    font-size:24px;
+    color:orange;
+}
+#iconWrapper{
+    margin-left:20%;
+    text-align:center;
+    margin-top:3%;
+    font-size:14px;
+@media screen and (max-width:680px) {
+    width:80%;
+    font-size:12px;
+ }
+}
+.icon{
+    position:relative;
+    vertical-align:super;
+    border-radius:40px;
+    background-color:gainsboro;
+    height:70px;
+    width:70px;
+    float:left;
+    margin:0.5%;
+    display:inline-block;
+span{
+    position: absolute; 
+    margin-top: -32%;
+    margin-left: -30%;
+	color:gainsboro;
+	font-size:14px;
+
+@media screen and (max-width:780px) {
+   color: transparent; 
+    }
+   }
+  }
+}
+#mainContainer{
+    @include container;
+    width:90%;
+    background-color: rgb(201, 209, 212);
+    height:auto;
+    margin-top:12%;
+    clear:both;
+h3{
+    font-size:22px;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    margin-left:5%;
+}
+#text{
+   color:white;
+   float:left;
+   width:30%;
+   text-align:left;
+   margin-left:12%;
+   over-flow:hidden;
+@media screen and (max-width:780px) {
+    width:80%;
+    font-size:12px;
+}
+
+}
+}
+#webinar{
+    background-color:#B0C4DE;
+}
+#testimonial{
+   background-color:#1E90FF;
+}
+
+
